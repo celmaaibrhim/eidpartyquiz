@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:ital@1&family=Ranchers&family=Satisfy&family=Syne+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    ></script>
+    <title>Quiz Board</title>
+  </head>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Welcome Ladies! 🥳</span>
+    </div>
+  </nav>
+  <body class="bg-dark">
+    <div class="board-game text-center">
+      <h1 class="display-2 heading">Quiz Board</h1>
+
+      <!-- Row 1 -->
+      <div class="row">
+        <!--five points ROW 1-->
+
+        <div class="col-md">
+          <h1 class="display-5 category">Five Points</h1>
+
+          <button
+            class="btn btn-lg btn-info"
+            onclick="showQuestion(this.id)"
+            id="Riddle 1"
+          >
+            1
+          </button>
+          <!--Answer: -->
+
+          <button
+            class="btn btn-lg btn-warning"
+            onclick="showQuestion(this.id)"
+            id="Which three Surah’s of the Qur’an are named after insects?"
+          >
+            2
+          </button>
+          <!--Answer: 1) Al-Naml (the Ant), 2) Al-Nahl (the Honey Bee) 3)Ankaboot -->
+
+          <button
+            class="btn btn-lg btn-danger"
+            onclick="showQuestion(this.id)"
+            id="What happened in the year of sorrow (aam ul huzn)?"
+          >
+            3
+          </button>
+          <!---Answer: Death of Abu Taalib and Khadijah-->
+        </div>
+
+        <!--10 points ROW 1-->
+
+        <div class="col-md">
+          <h1 class="display-5 category">Ten Points</h1>
+
+          <button
+            class="btn btn-lg btn-info"
+            onclick="showQuestion(this.id)"
+            id="How many Ambiyaa are mentioned in the Qur’aan?"
+          >
+            1
+          </button>
+          <!--Answer: 25 -->
+          <button
+            class="btn btn-lg btn-warning"
+            onclick="showQuestion(this.id)"
+            id="Riddle 2"
+          >
+            2
+          </button>
+          <!-- Answer: -->
+          <button
+            class="btn btn-lg btn-danger"
+            onclick="showQuestion(this.id)"
+            id="Who did the prophet refer to as ‘my mother after my own mother'?"
+          >
+            3
+          </button>
+          <!--Answer: -->
+        </div>
+
+        <!--15 points ROW 1-->
+
+        <div class="col-md">
+          <h1 class="display-5 category">Fifteen Points</h1>
+
+          <button
+            class="btn btn-lg btn-info"
+            onclick="showQuestion(this.id)"
+            id="How many many Surahs are there in the Qur'aan?"
+          >
+            1
+          </button>
+          <!--Answer:93-->
+          <button
+            class="btn btn-lg btn-warning"
+            onclick="showQuestion(this.id)"
+            id="What are the conditions of Salah?"
+          >
+            2
+          </button>
+          <!---Answer: -->
+
+          <button
+            class="btn btn-lg btn-danger"
+            onclick="showQuestion(this.id)"
+            id="What are the rights of the a Muslim upon another?"
+          >
+            3
+          </button>
+          <!---Answer: -->
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+
+      <div class="row">
+        <!--five points ROW 2-->
+
+        <div class="col-md">
+          <button
+            class="btn btn-lg btn-warning"
+            onclick="showQuestion(this.id)"
+            id="What was the seal of Prophethood?"
+          >
+            4
+          </button>
+          <!--Answer: It was a raised piece of flesh on the back of the Prophet صلى الله عليه وسلم 
+    in between the shoulder blades, closer to the right side. 
+    This was a sign indicated in previous scriptures as a proof that he is the last messenger. 
+    Many monks and Rabbis accepted Islam after reading about this in their scriptures and witnessing it with their own eyes-->
+
+          <button
+            class="btn btn-lg btn-danger"
+            onclick="showQuestion(this.id)"
+            id="Which country's name is mentioned in the Qur'an?"
+          >
+            5
+          </button>
+          <!---Answer: Egypt (Misr)-->
+          <button
+            class="btn btn-lg btn-info"
+            onclick="showQuestion(this.id)"
+            id=" Allah praised and used the Iman of two women as a model for other believers. Who were they?"
+          >
+            6
+          </button>
+          <!--Answer: Wife of Firawn and Maryam R.A-->
+        </div>
+
+        <!--10 points ROW 2-->
+
+        <div class="col-md">
+          <button
+            class="btn btn-lg btn-warning"
+            onclick="showQuestion(this.id)"
+            id="Riddle 3"
+          >
+            4
+          </button>
+          <!---Answer: -->
+          <button
+            class="btn btn-lg btn-danger"
+            onclick="showQuestion(this.id)"
+            id="How many years did the Prophet صلى الله عليه وسلم live in Makkah and Madinah for?"
+          >
+            5
+          </button>
+          <!-- Answer: 53 years in Makkah, 10 years in Madinah 1 -->
+          <button
+            class="btn btn-lg btn-info"
+            onclick="showQuestion(this.id)"
+            id="Who was the guardian of Maryam Alaihas Salaam?"
+          >
+            6
+          </button>
+          <!--Answer:Zakariyyah Alaihis Salaam-->
+        </div>
+
+        <!--15 points ROW 2-->
+
+        <div class="col-md">
+          <button
+            class="btn btn-lg btn-warning"
+            onclick="showQuestion(this.id)"
+            id="Riddle 6"
+          >
+            4
+          </button>
+          <!-- Answer: -->
+
+          <button
+            class="btn btn-lg btn-danger"
+            onclick="showQuestion(this.id)"
+            id="The prophet صلى الله عليه وسلم & Hamza رضي الله عنه were related in two ways. How?"
+          >
+            5
+          </button>
+          <!--Answer: -->
+
+          <button
+            class="btn btn-lg btn-info"
+            onclick="showQuestion(this.id)"
+            id="Riddle 7"
+          >
+            6
+          </button>
+          <!--Answer: -->
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+
+      <div class="row">
+        <!--5 points ROW 3-->
+
+        <div class="col-md">
+          <button
+            class="btn btn-lg btn-danger"
+            onclick="showQuestion(this.id)"
+            id="Who were the first people to embrace Islam?"
+          >
+            7
+          </button>
+          <!---Answer: The first woman was Khadijah (R.A) (The Prophet’s صلى الله عليه وسلم wife), 
+            The first slave was Zaid Ibn Haaritha (R.A) (The Prophet’s صلى الله عليه وسلم freed slave), 
+            The first child was Ali Ibn Abi Talib (R.A) (The Prophet’s صلى الله عليه وسلم cousin,
+            The first man was Abu Bakr (R.A) (The Prophet’s صلى الله عليه وسلم best friend)-->
+          <button
+            class="btn btn-lg btn-info"
+            onclick="showQuestion(this.id)"
+            id="Who were the first builders of the Ka`bah? "
+          >
+            8
+          </button>
+          <!---Answer: Ibrahim and Ismail peace be upon them-->
+
+          <button
+            class="btn btn-lg btn-warning"
+            onclick="showQuestion(this.id)"
+            id="6. Which creature spoke in the Qur'an?"
+          >
+            9
+          </button>
+          <!--Answer:  An-naml (the Ant)-->
+        </div>
+
+        <!--10 points ROW 3-->
+
+        <div class="col-md">
+          <button
+            class="btn btn-lg btn-danger"
+            onclick="showQuestion(this.id)"
+            id="Riddle 4 "
+          >
+            7
+          </button>
+          <!---Answer: -->
+
+          <button
+            class="btn btn-lg btn-info"
+            onclick="showQuestion(this.id)"
+            id="What was the full name of the Prophet صلى الله عليه وسلم maternal grandfather?"
+          >
+            8
+          </button>
+          <!--Answer:Wahab ibn Abd-Manaf ibn Zuhra ibn Kilaab -->
+
+          <button
+            class="btn btn-lg btn-warning"
+            onclick="showQuestion(this.id)"
+            id="Riddle 5"
+          >
+            9
+          </button>
+          <!-- Answer: -->
+        </div>
+
+        <!--15 points ROW 3-->
+
+        <div class="col-md">
+          <button
+            class="btn btn-lg btn-danger"
+            onclick="showQuestion(this.id)"
+            id="Name one Christian monk who saw the Prophet  صلى الله عليه وسلم  and recognised him"
+          >
+            7
+          </button>
+          <!--Answer:Buhaira, Nastoorah & Waraqah ibn Nawfal-->
+
+          <button
+            class="btn btn-lg btn-info"
+            onclick="showQuestion(this.id)"
+            id="Name 5 wives of the prophet صلى الله عليه وسلم
+    "
+          >
+            8
+          </button>
+          <!--Answer: -->
+
+          <button
+            class="btn btn-lg btn-warning"
+            onclick="showQuestion(this.id)"
+            id="Riddle 8"
+          >
+            9
+          </button>
+          <!--Answer: -->
+        </div>
+      </div>
+
+      <div id="showquestion">Pick A Question</div>
+
+      <div class="scores">
+        <div class="row">
+          <div class="col-sm">
+            <span>Table 1</span>
+            <input type="number" name="" value="0" />
+          </div>
+          <div class="col-sm">
+            <span>Table 2</span>
+            <input type="number" name="" value="0" />
+          </div>
+          <div class="col-sm">
+            <span>Table 3</span>
+            <input type="number" name="" value="0" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <span>Table 4</span>
+            <input type="number" name="" value="0" />
+          </div>
+          <div class="col-sm">
+            <span>Table 5</span>
+            <input type="number" name="" value="0" />
+          </div>
+          <div class="col-sm">
+            <span>Table 6</span>
+            <input type="number" name="" value="0" />
+          </div>
+          </div>
+                
+ <div class="row">
+          <div class="col-sm">
+            <span>Table 7</span>
+            <input type="number" name="" value="0" />
+          </div>
+          </div>
+                
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <p>© celmaaibrhim 2021</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
